@@ -9,10 +9,12 @@ string s = "";
 
 if (numberA == result)
 {
-    s = "да";
+    //s = "да";
+    s = $"да, квадрат от числа {numberB} равен {numberA}";
 }
 else 
 {
-    s = "нет";
+    //s = "нет";
+    s = $"нет, квадрат от числа {numberB} не равен {numberA}";
 }
 System.Console.WriteLine(s);

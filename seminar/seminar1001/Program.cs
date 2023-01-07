@@ -1,15 +1,12 @@
-﻿Console.WriteLine("First call:");
-DisplayIfNecessary(6);
-
-Console.WriteLine("Second call:");
-DisplayIfNecessary(5);
-
-void DisplayIfNecessary(int number)
+﻿void Task64 (int N)
 {
-    if (number % 2 == 0)
+    if (N <= 1)
     {
+        Console.Write(N);
         return;
     }
-
-    Console.WriteLine(number);
+    Console.Write($"{N}, ");
+    Task64(N - 1);
 }
+
+Task64(7);

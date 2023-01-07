@@ -117,6 +117,7 @@ void PrintArray(int[,] array)
         }
         Console.WriteLine();    
     }
+    //Console.WriteLine();
 }
 
 void SearchElement(int[,] array, int x, int y)
